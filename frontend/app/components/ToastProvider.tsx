@@ -17,7 +17,7 @@ interface ToastContext {
   toast: (title: string, type?: ToastType, description?: string) => void
 }
 
-const ToastContext = createContext<ToastContextType | undefined>(undefined)
+const ToastContext = createContext<ToastContext | undefined>(undefined)
 
 export const useToast = () => {
   const context = useContext(ToastContext)
@@ -84,3 +84,5 @@ export default function ToastProvider({ children }: { children: ReactNode }) {
     </ToastContext.Provider>
   )
 }
+
+

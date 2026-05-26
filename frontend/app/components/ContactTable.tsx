@@ -115,3 +115,4 @@ export default function ContactTable({ contacts, onEdit, onDelete }: ContactTabl
     </>
   )
 }
+
